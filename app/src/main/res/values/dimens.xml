@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_button_top">180dp</dimen>
+    <dimen name="size_button">250dp</dimen>
+    <dimen name="padding_buttons">50dp</dimen>
+    <dimen name="common_padding_min">8dp</dimen>
+    <dimen name="common_padding_default">16dp</dimen>
+</resources>

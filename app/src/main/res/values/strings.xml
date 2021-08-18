@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">S2Next</string>
+    <string name="btn_new_customer">Registrar Clientes</string>
+    <string name="btn_new_payment">Registrar Pago</string>
+    <string name="btn_view_customer">Ver Clientes</string>
+    <string name="btn_view_payments">Ver Pagos</string>
+    <string name="title_payments">Pagos</string>
+    <string name="client_name">Nombre: %1$s %2$s %3$s %4$s</string>
+    <string name="client_id">ID: %1$s</string>
+    <string name="efab_edit">Editar</string>
+    <string name="client_birth_date">Fecha de Nacimiento: %1$s</string>
+    <string name="client_gender">Género: %1$s</string>
+    <string name="pays_total">Total: $ %1$.2f</string>
+    <string name="pays_num">No. de Pagos: %1$i</string>
+    <string name="new_client">Nuevo Cliente</string>
+    <string name="new_payment">Registrar Pago</string>
+    <string name="hint_search">Buscar…</string>
+    <string name="btn_search">Buscar</string>
+    <string name="hint_first_name">Nombre</string>
+    <string name="hint_middle_name">Segundo Nonbre</string>
+    <string name="hint_last_name">Primer Apellido</string>
+    <string name="hint_second_last_name">Segundo Apellido</string>
+    <string name="hint_birth_date">Fecha de Nacimiento</string>
+    <string name="hint_gender">Genero</string>
+    <string name="format_date">(AAAA/MM/DDDD)</string>
+    <string name="hint_id_customer">ID del Cliente</string>
+    <string name="hint_id_costumer">ID del Cliente</string>
+    <string name="hint_payment_day">Fecha de Pago</string>
+    <string name="gender_male">Masculino</string>
+    <string name="gender_female">Femenino</string>
+    <string name="hint_total">Total</string>
+    <string name="btn_register_customer">Registrar</string>
+    <string name="payment_client_id">ID del Cliente: %1$s</string>
+</resources>

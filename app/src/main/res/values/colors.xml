@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorOnPrimary">@color/white</color>
+    <color name="colorOnSecondary">@color/gray_500_dark</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="light_blue_900">#01579b</color>
+    <color name="light_blue_900_light">#4f83cc</color>
+    <color name="light_blue_900_dark">#002f6c</color>
+    <color name="gray_500">#bdbdbd</color>
+    <color name="gray_500_light">#efefef</color>
+    <color name="gray_500_dark">#8d8d8d</color>
+    <color name="gray_100">#F5F5F5</color>
+</resources>
