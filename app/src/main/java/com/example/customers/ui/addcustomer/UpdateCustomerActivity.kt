@@ -62,16 +62,30 @@ class UpdateCustomerActivity : AppCompatActivity(){
 
     private fun configButton() {
         binding.btnRegisterCustomer.setOnClickListener {
-            val client = Customer(id!!,
-                binding.etFirstName.text.toString(),
-                binding.etMiddleName.text.toString(),
-                binding.etLastName.text.toString(),
-                binding.etSecondLastName.text.toString(),
-                binding.etBirthDate.text.toString(),
-                binding.actvGender.text.toString())
-            enableUI(false)
-            customersViewModel.updateCustomer(client)
-            finish()
+            if(binding.etFirstName.text.toString().isEmpty()){
+                binding.etFirstName.setError("Ingrese los datos")
+            }else if(binding.etLastName.text.toString().isEmpty()){
+                binding.etLastName.setError("Ingrese los datos")
+            }else if(binding.etSecondLastName.text.toString().isEmpty()){
+                binding.etSecondLastName.setError("Ingrese los datos")
+            }else if(binding.etBirthDate.text.toString().isEmpty()){
+                binding.etBirthDate.setError("Ingrese los datos")
+            }else if(binding.actvGender.text.toString().isEmpty()){
+                binding.actvGender.setError("Ingrese los datos")
+            }else {
+                val client = Customer(
+                    id!!,
+                    binding.etFirstName.text.toString().trim(),
+                    binding.etMiddleName.text.toString(),
+                    binding.etLastName.text.toString().trim(),
+                    binding.etSecondLastName.text.toString().trim(),
+                    binding.etBirthDate.text.toString().trim(),
+                    binding.actvGender.text.toString().trim()
+                )
+                enableUI(false)
+                customersViewModel.updateCustomer(client)
+                finish()
+            }
         }
     }
 

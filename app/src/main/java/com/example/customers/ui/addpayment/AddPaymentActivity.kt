@@ -41,14 +41,24 @@ class AddPaymentActivity : AppCompatActivity() {
 
     private fun configButton() {
         binding.btnRegisterPayment.setOnClickListener {
-            enableUI(false)
-            val pay = Payments(0,
-                binding.etIDCustomer.text.toString().toInt(),
-                binding.etPaymentDate.text.toString(),
-                currentDate,
-                binding.etTotal.text.toString().toDouble())
-            customersViewModel.newPayment(pay)
-            finish()
+            if(binding.etIDCustomer.text.toString().isEmpty()){
+                binding.etIDCustomer.setError("Ingrese los datos")
+            }else if(binding.etPaymentDate.text.toString().isEmpty()){
+                binding.etPaymentDate.setError("Ingrese los datos")
+            }else if(binding.etTotal.text.toString().isEmpty()){
+                binding.etTotal.setError("Ingrese los datos")
+            }else {
+                val pay = Payments(
+                    0,
+                    binding.etIDCustomer.text.toString().trim().toInt(),
+                    binding.etPaymentDate.text.toString().trim(),
+                    currentDate,
+                    binding.etTotal.text.toString().trim().toDouble()
+                )
+                customersViewModel.newPayment(pay)
+                enableUI(false)
+                finish()
+            }
         }
     }
 
